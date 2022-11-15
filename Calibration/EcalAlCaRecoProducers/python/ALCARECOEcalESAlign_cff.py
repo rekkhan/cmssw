@@ -14,7 +14,7 @@ ALCARECOEcalESAlignHLT = HLTrigger.HLTfilters.hltHighLevel_cfi.hltHighLevel.clon
 
 esSelectedTracks = cms.EDFilter("TrackSelector",
                                 src = cms.InputTag('generalTracks'),
-                                cut = cms.string("abs(eta)>1.65 && pt>1 && numberOfValidHits>=10")
+                                cut = cms.string("abs(eta)>1.65 && pt>1.0 && numberOfValidHits>=10")
                                 )
 
 import Alignment.CommonAlignmentProducer.AlignmentTrackSelector_cfi
